@@ -1,0 +1,7 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mherchel\/Sites\/acquia-drupal\/sites\/all\/themes\/herchel\/sass\/print\.sass}line{font-family:\000031}}
+#sidebar-first,
+#navigation,
+#block-system-main-menu,
+#footer {
+  display: none;
+}
