@@ -21,12 +21,13 @@
   <li>Change all function names in the <em>template.php</em> to your new theme name.</li>
   <li>The flaunt.js navigation works via the <em>Main Menu</em> block. Place this block into the <em>Navigation</em> region for things to click. You can change this behavior by editing <em>flaunt-menu.js</em> and <em>flaunt-menu.css</em>.</li>
   <li>Breakpoint configurations are located in <strong>both</strong> the <em>bastard.info </em>and <em>flaunt-menu.css</em> files.</li>
+  <li>You can enable the <em>sass_options = {:debug_info =&gt; true}</em> line at the bottom of <em>config.rb</em> to enable sass debugging in Chrome tools. Note that Chrome needs to be configured to support this.</li>
   <li>Delete this <em>README.md</em> file.</li>
   <li>Theme away...</li>
 </ol>
 <h2>Recommended tools</h2>
 <ul>
-  <li><a href="http://drupal.org/project/fences">Fences module</a> - enables clean and semantic HTML5 elements around your fields.</li>
+  <li><a href="http://drupal.org/project/fences">Fences module</a> - enables clean and semantic HTML5 elements around your fields</li>
   <li><a href="http://drupal.org/project/html5_tools">HTML5_tools module</a> - various HTMl5 fixes and tools</li>
   <li><a href="http://drupal.org/project/block_class">Block_class module</a> - makes it easier to follow the <a href="http://smacss.com/">smacss</a> workflow within Drupal</li>
   <li><a href="http://drupal.org/project/cs_adaptive_image">Client-side adaptive image module</a> - enables smaller images to be served to smaller devices</li>
