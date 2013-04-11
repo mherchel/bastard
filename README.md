@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <h1>Bastard [Drupal Theme]</h1>
 <p>Bastard is a lean and mean Drupal 7 starter theme that enables best practices for the lonely front-end developer (hence the name). It steals [what i consider] the best ideas from other themes and bastardizes them into one theme. This is a continuous work in progress.</p>
 <p>Bastard was originally bastardized by <a href="http://herchel.com">Mike Herchel</a> in late 2012 / early 2013. </p>
@@ -29,9 +28,3 @@
   <li><a href="http://drupal.org/project/cs_adaptive_image">Client-side adaptive image module</a> - enables smaller images to be served to smaller devices</li>
   <li><a href="http://drupal.org/project/flexslider">Flexslider module</a> - responsive and touch enabled slideshow</li>
 </ul>
-=======
-herchel
-=======
-
-Herchel Drupal Theme
->>>>>>> 2309a2e8b35db27a4104fbb398aa8913456d4ee3
