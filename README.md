@@ -16,6 +16,7 @@
   <li>Do not use as a base theme. Instead, rename and edit it directly. Any upgrades will <em>not</em> be backwards compatible.</li>
   <li>Edit the directory name to your choosing.</li>
   <li>Edit the bastard.info filename to &lt;name&gt;.info.</li>
+  <li>Modify the contents of your &lt;name&gt;.info file to suit its new name.</li>  
   <li>Change all function names in the template.php to your new theme name.</li>
   <li>Delete this README.md file.</li>
   <li>Theme away...</li>
