@@ -33,6 +33,7 @@
 
 			// Add/remove the nav-mobile-active class
 			$('.nav-mobile').toggleClass('nav-mobile-active');
+
 		});
 	
 		// Dynamic binding to on 'click'

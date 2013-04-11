@@ -4,6 +4,7 @@
 * Modifies theme to use Google CDN for Jquery using hook_js_alter().
 */
 
+
 function bastard_js_alter(&$js) {
   if (isset($js['misc/jquery.js'])) {
     $jquery_path = 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
@@ -18,6 +19,7 @@ function bastard_js_alter(&$js) {
 */
 
 function bastard_css_alter(&$css) {
+  // Remove defaults.css file.
   unset($css[drupal_get_path('module', 'system') . '/defaults.css']);
   unset($css[drupal_get_path('module', 'system') . '/system.css']);
   unset($css[drupal_get_path('module', 'system') . '/system.menus.css']);
@@ -31,4 +33,5 @@ function bastard_css_alter(&$css) {
 
 function bastard_preprocess_region(&$variables) {
   $variables['region'] = drupal_html_id($variables['region']);
+
 }
