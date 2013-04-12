@@ -33,5 +33,14 @@ function bastard_css_alter(&$css) {
 
 function bastard_preprocess_region(&$variables) {
   $variables['region'] = drupal_html_id($variables['region']);
-
 }
+
+/**
+ * Load Modernizr from Clouldfare CDN. Uncomment this sucka if you want to use modernizr.
+ */
+
+/*
+function bastard_preprocess_html(&$variables) {
+  drupal_add_js('http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js', 'external');
+}
+*/

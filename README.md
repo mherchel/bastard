@@ -9,6 +9,7 @@
   <li>No grid integration! Make or integrate your own if needed.</li>
   <li>Nested responsive navigation via a modified version of <a href="https://github.com/toddmotto/flaunt-js">flaunt-js</a>.</li>
   <li>Integration with the <a href="http://fortawesome.github.io/Font-Awesome/">font awesome</a> icon font.</li>
+  <li><a href="http://modernizr.com/">Modernizr</a> support.</li>
   <li>Fully HTML5 compliant.</li>
   <li>No cruft. This theme gets rid of some Drupal default css, and  does not include any gui theme settings. Make your changes directly in code.</li>
 </ul>
@@ -22,6 +23,7 @@
   <li>The flaunt.js navigation works via the <em>Main Menu</em> block. Place this block into the <em>Navigation</em> region for things to click. You can change this behavior by editing <em>flaunt-menu.js</em> and <em>flaunt-menu.css</em>.</li>
   <li>Breakpoint configurations are located in <strong>both</strong> the <em>bastard.info </em>and <em>flaunt-menu.css</em> files.</li>
   <li>You can enable the <em>sass_options = {:debug_info =&gt; true}</em> line at the bottom of <em>config.rb</em> to enable sass debugging in Chrome tools. Note that Chrome needs to be configured to support this.</li>
+  <li>You can enable Modernizr support by uncommenting the appropriate function within the <em>template.php</em> file.</li>
   <li>Delete this <em>README.md</em> file.</li>
   <li>Theme away...</li>
 </ol>
