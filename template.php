@@ -51,8 +51,8 @@ function bastard_preprocess_html(&$variables) {
 
 /*
 function bastard_preprocess_html(&$variables) {
-    drupal_add_js((drupal_get_path('theme',$GLOBALS['theme'])).'/js/livereload-snippit.js',
-      array('type' => 'file', 'scope' => 'header')
-    );
+  drupal_add_js((drupal_get_path('theme',$GLOBALS['theme'])).'/js/livereload-snippit.js',
+    array('type' => 'file', 'scope' => 'header')
+  );
 }
 */
