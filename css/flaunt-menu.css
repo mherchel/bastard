@@ -132,7 +132,7 @@
     Media Queries
 \*------------------------------------*/
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 40em) {
 	.nav-mobile {
 		display:block;
 	}
