@@ -9,7 +9,7 @@ stylesheets[print][] = css/print.css
 
 ; JS
 ; ------------------------------
-scripts[] = js/flaunt-menu.js
+scripts[] = js/navigation.js
 
 ; REGIONS
 ; ------------------------------

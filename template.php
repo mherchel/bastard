@@ -39,11 +39,20 @@ function bastard_preprocess_region(&$variables) {
  * Load Modernizr from Clouldfare CDN.
  */
 
-/*
+
 function bastard_preprocess_html(&$variables) {
   drupal_add_js('http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js', 'external');
 }
-*/
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * Adds a placeholder to the search block.
+ */
+function bastard_form_search_block_form_alter(&$form, &$form_state, $form_id) {
+  $form['search_block_form']['#attributes']['placeholder'] = t('Search');
+}
+
 
 /**
  * Integrate with LiveReload 2. See http://livereload.com. 
