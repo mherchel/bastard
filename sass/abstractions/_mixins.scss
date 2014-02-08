@@ -1,0 +1,74 @@
+%clearfix {
+  &:after,
+  &:before {
+    display: table;
+    content: "";
+    clear: both;
+  }
+}
+
+/*  Set a rem font size with pixel fallback
+
+
+    Rem is similar to the em value, but instead of being relative to the parent 
+    element it’srelative to the font-size set in the <html>.
+
+    It has all the benefits of em but you don’t get issues with e.g (compounding) 
+    since rem is only relative to the html element. The bad part is there’s no support 
+    for rem units in IE8 and below. But with this mixin we can create a fallback to 
+    pixels when rem isn’t supported.
+
+    # Usage
+
+      p {
+        @include font-size(14px)
+      }
+*/
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+/*  SVG background images with PNG and retina fallback
+
+    This mixin depends on Modernizr and creates a bit more work for you when 
+    creating images for your site, but it’s really worth it in the end.
+    You need one .svg file, that will serve as the default background image. 
+    You’ll also need a regular .png that serves as a fallback for 
+    non-svg-supporting browsers. And last you need a twice as large .png as 
+    a second fallback to retina screens.
+    All in all you need this:
+
+      * pattern.svg
+      * pattern.png
+      * pattern@2x.png
+
+    # Usage
+
+    body {
+      @include background-image('pattern');
+    }
+*/
+
+$image-path: '../img' !default;
+$fallback-extension: 'png' !default;
+$retina-suffix: '@2x';
+@mixin background-image($name, $size:false){
+    background-image: url(#{$image-path}/#{$name}.svg);
+    @if($size){
+        background-size: $size;
+    }
+    .no-svg &{
+        background-image: url(#{$image-path}/#{$name}.#{$fallback-extension});
+
+        @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          background-image: url(#{$image-path}/#{$name}#{$retina-suffix}.#{$fallback-extension});
+        }
+    }
+}

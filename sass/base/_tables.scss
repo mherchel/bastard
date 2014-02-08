@@ -1,0 +1,28 @@
+
+table {
+	width: 100%;
+	border-color: none;
+	.form-item {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+
+tr.odd,
+tr.even {
+	background-color: transparent;
+}
+
+td {
+	padding: 5px;
+}
+
+th {
+	padding: 5px;
+	background-color: #eee;
+}
+
+fieldset {
+	margin: 5px 0;
+}

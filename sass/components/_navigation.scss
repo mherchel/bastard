@@ -1,0 +1,180 @@
+
+/* =============================================================================
+    Primary Navigation
+   ========================================================================== */
+
+
+#block-system-main-menu {
+  position: relative;
+  display: inline-block;
+  ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.menu {
+  text-align: left;
+}
+
+#block-system-main-menu .menu li {
+  float: left;
+  *display: inline;
+  zoom: 1;
+  position: relative;
+  list-style-image: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  &.leaf, &.expanded {
+    float: left;
+    *display: inline;
+    zoom: 1;
+    position: relative;
+    list-style-image: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    display: block;
+    color: #FFF;
+    padding: 15px 20px;
+    background: #999;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  > a:hover {
+    background: #aaa;
+  }
+}
+
+.menu li {
+  &:hover .menu {
+    display: block;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 100;
+    li a {
+      background: #aaa;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      display: block;
+      padding: 15px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    a:hover {
+      background: #bbb;
+    }
+  }
+}
+
+/* Navigation submenu */
+
+/* Mobile navigation */
+
+.nav-mobile {
+  display: none;
+  /* Hide from browsers that don't support media queries */
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #3D3D3B;
+  height: 50px;
+  width: 50px;
+  &:before {
+    font-family: "FontAwesome";
+    display: block;
+    content: "\f0c9";
+    color: white;
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+  }
+}
+
+/* Mobile navigation, clickable area for revealing <ul> */
+
+.nav-click {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  height: 100%;
+  width: 50px;
+  cursor: pointer;
+  i {
+    display: block;
+    height: 48px;
+    width: 48px;
+    &:before {
+      font-family: "FontAwesome";
+      display: block;
+      content: "\f106";
+      color: white;
+      font-size: 35px;
+      line-height: 42px;
+      text-align: center;
+    }
+  }
+  &:hover {
+    background-color: #aaa;
+  }
+}
+
+.nav-rotate {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+// @todo refactor with breakpoint
+
+@media only screen and (max-width: 40em) {
+  .nav-mobile {
+    display: block;
+  }
+  #block-system-main-menu {
+    width: 100%;
+    padding: 50px 0 0;
+  }
+  .menu {
+    display: none;
+    li {
+      width: 100%;
+      float: none;
+      > a {
+        padding: 15px;
+      }
+    }
+  }
+  .nav-click {
+    display: block;
+  }
+  .nav-mobile-open {
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+  }
+  .menu li {
+    &:hover .menu {
+      display: none;
+    }
+    .menu {
+      position: static;
+      width: 100%;
+    }
+  }
+}
