@@ -4,11 +4,8 @@ core        = 7.x
 
 ; CSS
 ; ------------------------------
-stylesheets[all][] = css/flaunt-menu.css
-stylesheets[all][] = css/global.css
+stylesheets[all][] = css/styles.css
 stylesheets[print][] = css/print.css
-stylesheets[all and (min-width: 40em)][] = css/narrow.css
-stylesheets[all and (min-width: 60em)][] = css/normal.css
 
 ; JS
 ; ------------------------------

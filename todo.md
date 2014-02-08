@@ -6,4 +6,5 @@
 * Refactor typography with calculateRem mixin
 * Configure breakpoint to use no-query.scss
 * Document
+* Remove "Don't use this" from readme
 * Much, Much More

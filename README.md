@@ -1,5 +1,7 @@
 # Bastard [Drupal Theme]
 
+## Note: Don't use this version (yet)
+
 Bastard is a lean and mean Drupal 7 starter theme that enables best practices for the lonely front-end developer (hence the name). It steals [what i consider] the best ideas from other themes and bastardizes them into one theme. This bastard is a continuous work in progress.
 
 Bastard was originally bastardized by [Mike Herchel](http://herchel.com) in late 2012 / early 2013. 
