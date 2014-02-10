@@ -1,5 +1,5 @@
 (function ($) {
-  Drupal.behaviors.fldc14BrowserClass = {
+  Drupal.behaviors.ieBrowserClass = {
     attach: function ( context, settings ) {
       if ($.browser.msie && $.browser.version == 10) { // Detects IE10
         $("html").addClass("ie10");
