@@ -3,7 +3,7 @@
 
 <head>
   <?php print $head; ?>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <!--[if lte IE 9]>
@@ -11,8 +11,7 @@
   <![endif]-->
   <!--[if lte IE 8]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <link rel="stylesheet" href="/<?php print drupal_get_path('theme',$GLOBALS['theme']); ?>/css/narrow.css" media="all" />
-  <link rel="stylesheet" href="/<?php print drupal_get_path('theme',$GLOBALS['theme']); ?>/css/normal.css" media="all" />
+  <link rel="stylesheet" href="/<?php print drupal_get_path('theme',$GLOBALS['theme']); ?>/css/no-query.css" media="all" />
   <link rel="stylesheet" href="/<?php print drupal_get_path('theme',$GLOBALS['theme']); ?>/css/ie-lte-8.css" media="all" />
   <![endif]-->
 
