@@ -197,24 +197,24 @@ div, p, li, blockquote {
   display: block;
 }
 
-#block-system-main-menu li {
+#block-system-main-menu .menu-item {
   float: left;
   position: relative;
 }
-#block-system-main-menu li > a {
+#block-system-main-menu .menu-item > a {
   color: white;
   padding: 15px 20px;
   background: #999999;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-#block-system-main-menu li > a:hover {
+#block-system-main-menu .menu-item > a:hover {
   color: white;
   background: #aaaaaa;
 }
-#block-system-main-menu li:hover .menu {
+#block-system-main-menu .menu-item:hover .menu {
   display: block;
 }
-#block-system-main-menu li .menu {
+#block-system-main-menu .menu-item .menu {
   display: none;
   position: absolute;
   left: 0;
@@ -222,7 +222,7 @@ div, p, li, blockquote {
   padding: 0;
   z-index: 100;
 }
-#block-system-main-menu li .menu a {
+#block-system-main-menu .menu-item .menu a {
   background: #aaaaaa;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   display: block;
@@ -231,7 +231,7 @@ div, p, li, blockquote {
   line-height: 1.1;
   box-sizing: border-box;
 }
-#block-system-main-menu li .menu a:hover {
+#block-system-main-menu .menu-item .menu a:hover {
   color: white;
   background: #bbbbbb;
 }
@@ -244,14 +244,14 @@ div, p, li, blockquote {
   #block-system-main-menu .menu {
     display: none;
   }
-  #block-system-main-menu .menu li {
+  #block-system-main-menu .menu .menu-item {
     width: 100%;
     float: none;
   }
-  #block-system-main-menu .menu li:hover .menu {
+  #block-system-main-menu .menu .menu-item:hover .menu {
     display: none;
   }
-  #block-system-main-menu .menu li .menu {
+  #block-system-main-menu .menu .menu-item .menu {
     position: static;
     width: 100%;
   }

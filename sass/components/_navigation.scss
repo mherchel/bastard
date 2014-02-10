@@ -22,7 +22,7 @@
 
 
 // desktop navigation 
-#block-system-main-menu li {
+#block-system-main-menu .menu-item {
   float: left;
   position: relative;
   > a {
@@ -72,7 +72,7 @@
     padding: 50px 0 0;
     .menu {
       display: none;
-      li {
+      .menu-item {
         width: 100%;
         float: none;
         &:hover .menu {

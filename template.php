@@ -65,3 +65,19 @@ function bastard_preprocess_html(&$variables) {
   );
 }
 */
+
+/**
+* Add level indicator css class to all menu items.
+*/
+
+function bastard_menu_link(array $variables) {
+  $element = $variables['element'];
+  $sub_menu = '';
+  
+  $element['#attributes']['class'][] = 'menu-item menu-item--level-' . $element['#original_link']['depth'];
+  if ($element['#below']) {
+    $sub_menu = drupal_render($element['#below']);
+  }
+  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+}
