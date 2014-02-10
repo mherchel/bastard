@@ -21,6 +21,7 @@ ul.tabs:after, ul.tabs:before {
    ========================================================================== */
 button, input[type="submit"] {
   font-size: 25px;
+  font-size: 1.5625rem;
 }
 
 input[type="text"],
@@ -91,6 +92,15 @@ input[type="submit"]:last-child {
 }
 .form-item.form-type-radio:last-child {
   margin-right: 0;
+}
+
+/* =============================================================================
+    Layouts
+   ========================================================================== */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img, media {
