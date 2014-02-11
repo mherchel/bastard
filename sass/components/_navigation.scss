@@ -14,7 +14,7 @@
     margin: 0;
     padding: 0;
   }
-  a {
+  .menu-item-link {
     text-decoration: none;
     display: block;
   }
@@ -22,10 +22,23 @@
 
 
 // desktop navigation 
-#block-system-main-menu .menu-item {
-  float: left;
-  position: relative;
-  > a {
+#block-system-main-menu {
+  .menu-item {
+    float: left;
+    position: relative;
+    &:hover .menu {
+      display: block;
+    }
+    .menu {
+      display: none;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      padding: 0;
+      z-index: 100; 
+    }
+  }
+  .menu-item-link--level-1 { // First level menu link
     color: $nav-text;
     padding: 15px 20px;
     background: $nav-background;
@@ -35,32 +48,19 @@
       background: $nav-hover-background;
     }
   }
-
-  &:hover .menu {
+  .menu-item-link--level-2 { // Second level menu link
+    background: $sub-nav-background;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     display: block;
-  }
-
-  .menu {
-    display: none;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    padding: 0;
-    z-index: 100;
-    a {
-      background: $sub-nav-background;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      display: block;
-      padding: 15px;
-      width: 200px;
-      line-height: 1.1;
-      box-sizing: border-box;
-    }
-    a:hover {
+    padding: 15px;
+    width: 200px;
+    line-height: 1.1;
+    box-sizing: border-box;
+    &:hover {
       color: $sub-nav-hover-text;
       background: $sub-nav-hover-background;
     }
-  }  
+  }
 }
 
 
@@ -72,21 +72,21 @@
     padding: 50px 0 0;
     .menu {
       display: none;
-      .menu-item {
+    }
+    .menu-item {
+      width: 100%;
+      float: none;
+      &:hover .menu {
+        display: none;
+      }
+      .menu {
+        position: static;
         width: 100%;
-        float: none;
-        &:hover .menu {
-          display: none;
-        }
-        .menu {
-          position: static;
-          width: 100%;
-        }
       }
-      a {
-        padding: 15px;
-        width: 100%!important;
-      }
+    }
+    .menu-item-link {
+      padding: 15px;
+      width: 100%!important;
     }
   }
 

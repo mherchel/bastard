@@ -7,7 +7,7 @@ Bastard was originally bastardized by [Mike Herchel](http://herchel.com) in late
 ## Bastard contains the following features
 
 *   Fully responsive
-*   Integrated nested responsive navigation via a modified version of [flaunt-js](https://github.com/toddmotto/flaunt-js).
+*   Integrated nested responsive navigation.
 *   Sass integration.
 *   Mobile first approach.
 *   No grid integration! Make or integrate your own if needed.

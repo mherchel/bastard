@@ -211,16 +211,6 @@ div, p, li, blockquote {
   float: left;
   position: relative;
 }
-#block-system-main-menu .menu-item > a {
-  color: white;
-  padding: 15px 20px;
-  background: #999999;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-#block-system-main-menu .menu-item > a:hover {
-  color: white;
-  background: #aaaaaa;
-}
 #block-system-main-menu .menu-item:hover .menu {
   display: block;
 }
@@ -245,6 +235,16 @@ div, p, li, blockquote {
   color: white;
   background: #bbbbbb;
 }
+#block-system-main-menu a {
+  color: white;
+  padding: 15px 20px;
+  background: #999999;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+#block-system-main-menu a:hover {
+  color: white;
+  background: #aaaaaa;
+}
 
 @media (max-width: 56em) {
   #block-system-main-menu {
@@ -254,18 +254,18 @@ div, p, li, blockquote {
   #block-system-main-menu .menu {
     display: none;
   }
-  #block-system-main-menu .menu .menu-item {
+  #block-system-main-menu .menu-item {
     width: 100%;
     float: none;
   }
-  #block-system-main-menu .menu .menu-item:hover .menu {
+  #block-system-main-menu .menu-item:hover .menu {
     display: none;
   }
-  #block-system-main-menu .menu .menu-item .menu {
+  #block-system-main-menu .menu-item .menu {
     position: static;
     width: 100%;
   }
-  #block-system-main-menu .menu a {
+  #block-system-main-menu a {
     padding: 15px;
     width: 100% !important;
   }
