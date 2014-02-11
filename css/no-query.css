@@ -1,0 +1,261 @@
+/* =============================================================================
+    no-query.scss - all CSS without media queries for IE8 & below
+   ========================================================================== */
+ul.tabs:after, ul.tabs:before {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/* =============================================================================
+   Breakpoint Definitions
+   ========================================================================== */
+/* =============================================================================
+    Color Definitions
+   ========================================================================== */
+/* =============================================================================
+    Animations
+   ========================================================================== */
+/* =============================================================================
+    Fonts
+   ========================================================================== */
+/* =============================================================================
+    Forms
+   ========================================================================== */
+button, input[type="submit"] {
+  font-size: 25px;
+  font-size: 1.5625rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  max-width: 100%;
+  -webkit-appearance: none;
+  width: 100%;
+  width: auto;
+}
+
+label {
+  display: block;
+}
+label.error {
+  color: red;
+}
+
+form .description {
+  color: #999;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.form-item {
+  padding: 10px 0;
+}
+
+input[type="submit"] {
+  margin-right: 10px;
+}
+input[type="submit"]:last-child {
+  margin-right: 0;
+}
+
+.views-exposed-form .views-exposed-widget .form-submit {
+  margin: 0;
+  margin: 1.4em;
+}
+
+.views-exposed-form .views-exposed-widget {
+  float: none;
+  float: left;
+}
+
+/* Make radio buttons inline */
+.form-item.form-type-radio {
+  display: inline-block;
+  margin-right: 10px;
+}
+.form-item.form-type-radio:last-child {
+  margin-right: 0;
+}
+
+/* =============================================================================
+    Layouts
+   ========================================================================== */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img, media {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+table {
+  width: 100%;
+  border-color: none;
+}
+table .form-item {
+  margin: 0;
+  padding: 0;
+}
+
+tr.odd,
+tr.even {
+  background-color: transparent;
+}
+
+td {
+  padding: 5px;
+}
+
+th {
+  padding: 5px;
+  background-color: #eee;
+}
+
+fieldset {
+  margin: 5px 0;
+}
+
+/* =============================================================================
+    Typography
+   ========================================================================== */
+html {
+  font-size: 100%;
+}
+
+body {
+  line-height: 1.7;
+  margin: 0;
+}
+
+h1 {
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 28px;
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 22px;
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+
+div, p, li, blockquote {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+/* =============================================================================
+    Aside
+   ========================================================================== */
+/* =============================================================================
+    Branding
+   ========================================================================== */
+/* =============================================================================
+    Comments
+   ========================================================================== */
+/* =============================================================================
+    Footer Section
+   ========================================================================== */
+/* =============================================================================
+    Drupal's Messages
+   ========================================================================== */
+/* =============================================================================
+    Primary Navigation
+   ========================================================================== */
+#block-system-main-menu {
+  position: relative;
+  display: inline-block;
+}
+#block-system-main-menu ul, #block-system-main-menu li {
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#block-system-main-menu .menu-item-link {
+  text-decoration: none;
+  display: block;
+}
+
+#block-system-main-menu .menu-item {
+  float: left;
+  position: relative;
+}
+#block-system-main-menu .menu-item:hover .menu {
+  display: block;
+}
+#block-system-main-menu .menu-item .menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  z-index: 100;
+}
+#block-system-main-menu .menu-item-link--level-1 {
+  color: white;
+  padding: 15px 20px;
+  background: #999999;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+#block-system-main-menu .menu-item-link--level-1:hover {
+  color: white;
+  background: #aaaaaa;
+}
+#block-system-main-menu .menu-item-link--level-2 {
+  background: #aaaaaa;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: block;
+  padding: 15px;
+  width: 200px;
+  line-height: 1.1;
+  box-sizing: border-box;
+}
+#block-system-main-menu .menu-item-link--level-2:hover {
+  color: white;
+  background: #bbbbbb;
+}
+
+/* =============================================================================
+    Drupal's Pager
+   ========================================================================== */
+/* =============================================================================
+    Drupal's Tabs (Split by Breakpoint)
+   ========================================================================== */
+ul.tabs {
+  margin-bottom: 1em;
+  border-bottom: 1px solid #bbb;
+  padding: 0;
+}
+ul.tabs > li {
+  list-style: none;
+  float: left;
+  margin-right: 1em;
+  background-color: #eee;
+}
+ul.tabs > li.active {
+  background-color: #ccc;
+}
+ul.tabs > li a {
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+  width: 100%;
+}

@@ -1,0 +1,18 @@
+
+/* =============================================================================
+    no-query.scss - all CSS without media queries for IE8 & below
+   ========================================================================== */
+
+
+// Remove media queries from rules
+$breakpoint-no-queries: true;
+
+// Don't wrap media queries in a class
+$breakpoint-no-query-fallbacks: false;
+
+@import "compass";
+@import "breakpoint";
+@import "abstractions/**/*";
+@import "variables/**/*";
+@import "base/**/*";
+@import "components/**/*";

@@ -33,7 +33,7 @@ select {
   -webkit-appearance: none;
   width: 100%;
 }
-@media (min-width: 43em) {
+@media (min-width: 700px) {
   input[type="text"],
   input[type="email"],
   input[type="password"],
@@ -70,7 +70,7 @@ input[type="submit"]:last-child {
 .views-exposed-form .views-exposed-widget .form-submit {
   margin: 0;
 }
-@media (min-width: 43em) {
+@media (min-width: 700px) {
   .views-exposed-form .views-exposed-widget .form-submit {
     margin: 1.4em;
   }
@@ -79,7 +79,7 @@ input[type="submit"]:last-child {
 .views-exposed-form .views-exposed-widget {
   float: none;
 }
-@media (min-width: 43em) {
+@media (min-width: 700px) {
   .views-exposed-form .views-exposed-widget {
     float: left;
   }
@@ -202,7 +202,7 @@ div, p, li, blockquote {
   margin: 0;
   padding: 0;
 }
-#block-system-main-menu a {
+#block-system-main-menu .menu-item-link {
   text-decoration: none;
   display: block;
 }
@@ -222,7 +222,17 @@ div, p, li, blockquote {
   padding: 0;
   z-index: 100;
 }
-#block-system-main-menu .menu-item .menu a {
+#block-system-main-menu .menu-item-link--level-1 {
+  color: white;
+  padding: 15px 20px;
+  background: #999999;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+#block-system-main-menu .menu-item-link--level-1:hover {
+  color: white;
+  background: #aaaaaa;
+}
+#block-system-main-menu .menu-item-link--level-2 {
   background: #aaaaaa;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   display: block;
@@ -231,22 +241,12 @@ div, p, li, blockquote {
   line-height: 1.1;
   box-sizing: border-box;
 }
-#block-system-main-menu .menu-item .menu a:hover {
+#block-system-main-menu .menu-item-link--level-2:hover {
   color: white;
   background: #bbbbbb;
 }
-#block-system-main-menu a {
-  color: white;
-  padding: 15px 20px;
-  background: #999999;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-#block-system-main-menu a:hover {
-  color: white;
-  background: #aaaaaa;
-}
 
-@media (max-width: 56em) {
+@media (min-width: max-width) and ("no-query" true: 900px) {
   #block-system-main-menu {
     width: 100%;
     padding: 50px 0 0;
@@ -265,7 +265,7 @@ div, p, li, blockquote {
     position: static;
     width: 100%;
   }
-  #block-system-main-menu a {
+  #block-system-main-menu .menu-item-link {
     padding: 15px;
     width: 100% !important;
   }
@@ -338,7 +338,7 @@ div, p, li, blockquote {
 /* =============================================================================
     Drupal's Tabs (Split by Breakpoint)
    ========================================================================== */
-@media (min-width: 0) and (max-width: 43em) {
+@media (min-width: 0) and ("no-query" true: 700px) {
   ul.tabs {
     background-color: #eee;
     border-bottom: none;
@@ -395,7 +395,7 @@ div, p, li, blockquote {
     color: #666;
   }
 }
-@media (min-width: 43em) {
+@media (min-width: 700px) {
   ul.tabs {
     margin-bottom: 1em;
     border-bottom: 1px solid #bbb;
