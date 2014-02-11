@@ -33,7 +33,7 @@ select {
   -webkit-appearance: none;
   width: 100%;
 }
-@media (min-width: 700px) {
+@media (min-width: 43.75em) {
   input[type="text"],
   input[type="email"],
   input[type="password"],
@@ -70,7 +70,7 @@ input[type="submit"]:last-child {
 .views-exposed-form .views-exposed-widget .form-submit {
   margin: 0;
 }
-@media (min-width: 700px) {
+@media (min-width: 43.75em) {
   .views-exposed-form .views-exposed-widget .form-submit {
     margin: 1.4em;
   }
@@ -79,7 +79,7 @@ input[type="submit"]:last-child {
 .views-exposed-form .views-exposed-widget {
   float: none;
 }
-@media (min-width: 700px) {
+@media (min-width: 43.75em) {
   .views-exposed-form .views-exposed-widget {
     float: left;
   }
@@ -246,7 +246,7 @@ div, p, li, blockquote {
   background: #bbbbbb;
 }
 
-@media (min-width: max-width) and ("no-query" true: 900px) {
+@media (min-width: max-width) and ("no-query" true: 56.25em) {
   #block-system-main-menu {
     width: 100%;
     padding: 50px 0 0;
@@ -338,7 +338,7 @@ div, p, li, blockquote {
 /* =============================================================================
     Drupal's Tabs (Split by Breakpoint)
    ========================================================================== */
-@media (min-width: 0) and ("no-query" true: 700px) {
+@media (min-width: 0) and ("no-query" true: 43.75em) {
   ul.tabs {
     background-color: #eee;
     border-bottom: none;
@@ -395,7 +395,7 @@ div, p, li, blockquote {
     color: #666;
   }
 }
-@media (min-width: 700px) {
+@media (min-width: 43.75em) {
   ul.tabs {
     margin-bottom: 1em;
     border-bottom: 1px solid #bbb;
