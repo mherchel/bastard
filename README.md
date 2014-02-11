@@ -37,3 +37,4 @@ Bastard was originally bastardized by [Mike Herchel](http://herchel.com) in late
 *   [HTML5_tools module](http://drupal.org/project/html5_tools) - various HTMl5 fixes and tools
 *   [Borealis Module](https://drupal.org/project/borealis) - support for responsive images and semantic block templates
 *   [Flexslider module](http://drupal.org/project/flexslider) - responsive and touch enabled slideshow
+*   [Blockify module](https://drupal.org/project/blockify) - Exposes a number of Drupalisms as blocks
