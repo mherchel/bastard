@@ -207,45 +207,6 @@ div, p, li, blockquote {
   display: block;
 }
 
-#block-system-main-menu .menu-item {
-  float: left;
-  position: relative;
-}
-#block-system-main-menu .menu-item:hover .menu {
-  display: block;
-}
-#block-system-main-menu .menu-item .menu {
-  display: none;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  padding: 0;
-  z-index: 100;
-}
-#block-system-main-menu .menu-item-link--level-1 {
-  color: white;
-  padding: 15px 20px;
-  background: #999999;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-#block-system-main-menu .menu-item-link--level-1:hover {
-  color: white;
-  background: #aaaaaa;
-}
-#block-system-main-menu .menu-item-link--level-2 {
-  background: #aaaaaa;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  display: block;
-  padding: 15px;
-  width: 200px;
-  line-height: 1.1;
-  box-sizing: border-box;
-}
-#block-system-main-menu .menu-item-link--level-2:hover {
-  color: white;
-  background: #bbbbbb;
-}
-
 @media (min-width: max-width) and ("no-query" true: 56.25em) {
   #block-system-main-menu {
     width: 100%;
@@ -332,6 +293,45 @@ div, p, li, blockquote {
     transform: rotate(180deg);
   }
 }
+#block-system-main-menu .menu-item {
+  float: left;
+  position: relative;
+}
+#block-system-main-menu .menu-item:hover .menu {
+  display: block;
+}
+#block-system-main-menu .menu-item .menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  z-index: 100;
+}
+#block-system-main-menu .menu-item-link--level-1 {
+  color: white;
+  padding: 15px 20px;
+  background: #999999;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+#block-system-main-menu .menu-item-link--level-1:hover {
+  color: white;
+  background: #aaaaaa;
+}
+#block-system-main-menu .menu-item-link--level-2 {
+  background: #aaaaaa;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: block;
+  padding: 15px;
+  width: 200px;
+  line-height: 1.1;
+  box-sizing: border-box;
+}
+#block-system-main-menu .menu-item-link--level-2:hover {
+  color: white;
+  background: #bbbbbb;
+}
+
 /* =============================================================================
     Drupal's Pager
    ========================================================================== */

@@ -20,50 +20,6 @@
   }
 }
 
-
-// desktop navigation 
-#block-system-main-menu {
-  .menu-item {
-    float: left;
-    position: relative;
-    &:hover .menu {
-      display: block;
-    }
-    .menu {
-      display: none;
-      position: absolute;
-      left: 0;
-      width: 100%;
-      padding: 0;
-      z-index: 100; 
-    }
-  }
-  .menu-item-link--level-1 { // First level menu link
-    color: $nav-text;
-    padding: 15px 20px;
-    background: $nav-background;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    &:hover {
-      color: $nav-hover-text;
-      background: $nav-hover-background;
-    }
-  }
-  .menu-item-link--level-2 { // Second level menu link
-    background: $sub-nav-background;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    display: block;
-    padding: 15px;
-    width: 200px;
-    line-height: 1.1;
-    box-sizing: border-box;
-    &:hover {
-      color: $sub-nav-hover-text;
-      background: $sub-nav-hover-background;
-    }
-  }
-}
-
-
 // mobile navigation
 @include breakpoint (max-width $tablet_wide) {
 
@@ -142,5 +98,48 @@
   }
   .nav-rotate {
     @include transform(rotate(180deg));
+  }
+}
+
+
+// desktop navigation 
+#block-system-main-menu {
+  .menu-item {
+    float: left;
+    position: relative;
+    &:hover .menu {
+      display: block;
+    }
+    .menu {
+      display: none;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      padding: 0;
+      z-index: 100; 
+    }
+  }
+  .menu-item-link--level-1 { // First level menu link
+    color: $nav-text;
+    padding: 15px 20px;
+    background: $nav-background;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    &:hover {
+      color: $nav-hover-text;
+      background: $nav-hover-background;
+    }
+  }
+  .menu-item-link--level-2 { // Second level menu link
+    background: $sub-nav-background;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
+    padding: 15px;
+    width: 200px;
+    line-height: 1.1;
+    box-sizing: border-box;
+    &:hover {
+      color: $sub-nav-hover-text;
+      background: $sub-nav-hover-background;
+    }
   }
 }
