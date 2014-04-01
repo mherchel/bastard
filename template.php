@@ -94,7 +94,7 @@ function bastard_form_search_block_form_alter(&$form, &$form_state, $form_id) {
 
 
 /**
- * Integrate with LiveReload 2. See http://livereload.com. 
+ * Integrate with LiveReload 2. See http://livereload.com.
  */
 
 /*
@@ -123,3 +123,25 @@ function bastard_menu_link(array $variables) {
   $output = l($element['#title'], $element['#href'], array('attributes' => array('class' => array($menu_link))));
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
+
+/**
+* Add page template suggestions based on the aliased path. For instance, if the current
+* page has an alias of about/history/early, we'll have templates of:
+* page-about-history-early.tpl.php, page-about-history.tpl.php, page-about.tpl.php
+* Whichever is found first is the one that will be used.
+*/
+
+function bastard_preprocess_page(&$vars) {
+  if (module_exists('path')) {
+    $alias = drupal_get_path_alias(str_replace('/edit','',$_GET['q']));
+    if ($alias != $_GET['q']) {
+      $template_filename = 'page';
+      foreach (explode('/', $alias) as $path_part) {
+        $template_filename = $template_filename . '-' . $path_part;
+        $vars['template_files'][] = $template_filename;
+      }
+    }
+  }
+}
+
+
