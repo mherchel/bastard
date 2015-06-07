@@ -1,8 +1,3 @@
 /**
  * User Login page
  */
-
-.page-user:not([class*="faculty"]) .main {
-  @extend %container;
-  margin: 40px auto;
-}

@@ -9,27 +9,10 @@
 }
 %container,
 .container,
-.block-workbench-block,
 div.tabs {
   @include breakpoint($tablet_narrow) {
     width: 94%;
     max-width: 1700px;
     margin: 0 auto;
-  }
-}
-.annenberg-standard,
-.annenberg-standard-hero {
-  position: relative; // @todo move this 
-}
-
-.page-node {
-	hr { // allow for clean separation when adding in content via wysiwyg
-		clear: both;
-	}
-}
-.standard-content {
-  padding: 20px;
-  @include breakpoint($tablet_narrow) {
-    padding: 20px 0;
   }
 }
