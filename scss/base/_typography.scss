@@ -1,0 +1,81 @@
+/**
+ * Typography
+ */
+
+h1 {
+  font-size: 45px;
+  line-height: 1.1;
+  font-weight: 200;
+  &.large {
+    font-size: 65px;
+  }
+  a {
+    color: inherit;
+    transition: color .2s;
+    &:hover {
+      color: $red;
+    }
+  }
+}
+h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 200;
+  a {
+    color: inherit;
+    transition: color .2s;
+    &:hover {
+      color: $red;
+    }
+  }
+}
+h3 {
+  font-size: 27px;
+  line-height: 1.2;
+  font-weight: 500;
+  text-transform: none;
+  margin: 0 0 10px 0;
+  a {
+    color: inherit;
+    transition: color .2s;
+    &:hover {
+      color: $red;
+    }
+  }
+}
+h3 {
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 500;
+  a {
+    color: inherit;
+    transition: color .2s;
+    &:hover {
+      color: $red;
+    }
+  }
+}
+ul {
+  li {
+    list-style-type: circle;
+  }
+}
+ol {
+  li {
+    list-style-type: octal;
+  }
+}
+blockquote {
+  position: relative;
+  font-size: 30px;
+  font-weight: normal;
+  &:before {
+    position: absolute;
+    right: calc(100% + 10px);
+    top: 0;
+    content: "“";
+    font-size: 70px;
+    line-height: 1.1;
+
+  }
+}

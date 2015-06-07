@@ -1,2 +1,27 @@
-# Ignore sass-cache
-*.sass-cache*
+# Ignore Mac files
+.DS_Store
+
+# Ignore PHPStorm files
+.idea/
+.idea/*
+
+# Ignore output css
+css/style.css.map
+
+# Ignore node modules
+node_modules
+npm-debug.log
+
+# Ignore bower components
+bower_components
+
+# Ignore sass cache
+.sass-cache
+
+# Ignore files that get auto filled
+scss/_*.scss
+
+# Ignore tmp directory
+
+tmp/
+tmp/*

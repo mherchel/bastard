@@ -1,0 +1,14 @@
+//
+// Sitewide breakpoint variables
+//
+
+$wide: 1600px;
+$normal_wide: 1400px;
+$normal: 1100px;
+$tablet_wide: 900px;
+$tablet_narrow: 650px;
+$smartphone_wide: 480px;
+$smartphone_narrow: 380px;
+
+// Switch from mobile to desktop nav
+$nav-switch: $normal;

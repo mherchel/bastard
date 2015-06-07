@@ -1,0 +1,98 @@
+/**
+ * 
+ * USC Font stack
+ *
+ * http://identity.usc.edu/digital/web-fonts/
+ * 
+ */
+
+@font-face { 
+  font-family: 'National'; src: url('../fonts/national/NationalWeb-Light.eot'); src: local(':)'), url('../fonts/national/NationalWeb-Light.woff') format('woff'), url('../fonts/national/NationalWeb-Light.ttf') format('truetype'), url('../fonts/national/NationalWeb-Light.svg') format('svg'); 
+  font-weight: 200; 
+  font-style: normal; 
+}
+@font-face { 
+  font-family: 'National'; src: url('../fonts/national/NationalWeb-LightItalic.eot'); src: local(':)'), url('../fonts/national/NationalWeb-LightItalic.woff') format('woff'), url('../fonts/national/NationalWeb-LightItalic.ttf') format('truetype'), url('../fonts/national/NationalWeb-LightItalic.svg') format('svg'); 
+  font-weight: 200; 
+  font-style: italic; 
+}
+@font-face { 
+  font-family: 'National'; src: url('../fonts/national/NationalWeb-Regular.eot'); src: local(':)'), url('../fonts/national/NationalWeb-Regular.woff') format('woff'), url('../fonts/national/NationalWeb-Regular.ttf') format('truetype'), url('../fonts/national/NationalWeb-Regular.svg') format('svg'); 
+  font-weight: 500; 
+  font-style: normal; 
+}
+@font-face { 
+  font-family: 'National'; src: url('../fonts/national/NationalWeb-Italic.eot'); src: local(':)'), url('../fonts/national/NationalWeb-Italic.woff') format('woff'), url('//www.usc.edu/assets/fonts/NationalWeb-Italic.ttf') format('truetype'), url('//www.usc.edu/assets/fonts/NationalWeb-Italic.svg') format('svg'); 
+  font-weight: 500; 
+  font-style: italic; 
+}
+
+
+// @todo These will be the final location of the fonts when we switch over to a USC.EDU domain
+// 
+// @font-face { 
+//   font-family: 'National'; src: url('//www.usc.edu/assets/fonts/NationalWeb-Light.eot'); src: local(':)'), url('//www.usc.edu/assets/fonts/NationalWeb-Light.woff') format('woff'), url('//www.usc.edu/assets/fonts/NationalWeb-Light.ttf') format('truetype'), url('//www.usc.edu/assets/fonts/NationalWeb-Light.svg') format('svg'); 
+//   font-weight: 200; 
+//   font-style: normal; 
+// }
+// @font-face { 
+//   font-family: 'National'; src: url('//www.usc.edu/assets/fonts/NationalWeb-LightItalic.eot'); src: local(':)'), url('//www.usc.edu/assets/fonts/NationalWeb-LightItalic.woff') format('woff'), url('//www.usc.edu/assets/fonts/NationalWeb-LightItalic.ttf') format('truetype'), url('//www.usc.edu/assets/fonts/NationalWeb-LightItalic.svg') format('svg'); 
+//   font-weight: 200; 
+//   font-style: italic; 
+// }
+// @font-face { 
+//   font-family: 'National'; src: url('//www.usc.edu/assets/fonts/NationalWeb-Regular.eot'); src: local(':)'), url('//www.usc.edu/assets/fonts/NationalWeb-Regular.woff') format('woff'), url('//www.usc.edu/assets/fonts/NationalWeb-Regular.ttf') format('truetype'), url('//www.usc.edu/assets/fonts/NationalWeb-Regular.svg') format('svg'); 
+//   font-weight: 500; 
+//   font-style: normal; 
+// }
+// @font-face { 
+//   font-family: 'National'; src: url('//www.usc.edu/assets/fonts/NationalWeb-Italic.eot'); src: local(':)'), url('//www.usc.edu/assets/fonts/NationalWeb-Italic.woff') format('woff'), url('//www.usc.edu/assets/fonts/NationalWeb-Italic.ttf') format('truetype'), url('//www.usc.edu/assets/fonts/NationalWeb-Italic.svg') format('svg'); 
+//   font-weight: 500; 
+//   font-style: italic; 
+// }
+
+// Disabled fonts not used
+// 
+// @font-face { 
+//   font-family: 'National'; src: url('//www.usc.edu/assets/fonts/NationalWeb-Semibold.eot'); src: local(':)'), url('//www.usc.edu/assets/fonts/NationalWeb-Semibold.woff') format('woff'), url('//www.usc.edu/assets/fonts/NationalWeb-Semibold.ttf') format('truetype'), url('//www.usc.edu/assets/fonts/NationalWeb-Semibold.svg') format('svg'); 
+//   font-weight: 700; 
+//   font-style: normal; 
+// }
+// @font-face { 
+//   font-family: 'National'; src: url('//www.usc.edu/assets/fonts/NationalWeb-Semibold-Italic.eot'); src: local(':)'), url('//www.usc.edu/assets/fonts/NationalWeb-Semibold-Italic.woff') format('woff'), url('//www.usc.edu/assets/fonts/NationalWeb-Semibold-Italic.ttf') format('truetype'), url('//www.usc.edu/assets/fonts/NationalWeb-Semibold-Italic.svg') format('svg'); 
+//   font-weight: 700; 
+//   font-style: italic; 
+// }
+// @font-face { 
+//   font-family: 'National'; src: url('//www.usc.edu/assets/fonts/NationalWeb-Bold.eot'); src: local(':)'), url('//www.usc.edu/assets/fonts/NationalWeb-Bold.woff') format('woff'), url('//www.usc.edu/assets/fonts/NationalWeb-Bold.ttf') format('truetype'), url('//www.usc.edu/assets/fonts/NationalWeb-Bold.svg') format('svg'); 
+//   font-weight: 800; 
+//   font-style: normal; 
+// }
+// @font-face { 
+//   font-family: 'National'; src: url('//www.usc.edu/assets/fonts/NationalWeb-Extrabold.eot'); src: local(':)'), url('//www.usc.edu/assets/fonts/NationalWeb-Extrabold.woff') format('woff'), url('//www.usc.edu/assets/fonts/NationalWeb-Extrabold.ttf') format('truetype'), url('//www.usc.edu/assets/fonts/NationalWeb-Extrabold.svg') format('svg'); 
+//   font-weight: 900; 
+//   font-style: normal; 
+// }
+// @font-face { 
+//   font-family: 'National'; src: url('//www.usc.edu/assets/fonts/NationalWeb-Extrabold-Italic.eot'); src: local(':)'), url('//www.usc.edu/assets/fonts/NationalWeb-ExtraBold-Italic.woff') format('woff'), url('//www.usc.edu/assets/fonts/NationalWeb-Extrabold-Italic.ttf') format('truetype'), url('//www.usc.edu/assets/fonts/NationalWeb-Extrabold-Italic.svg') format('svg'); 
+//   font-weight: 900; 
+//   font-style: italic; 
+// }
+
+
+/**
+ * 
+ * USC Annenberg Icon font. Generated from icomoon.com
+ * 
+ */
+
+@font-face {
+  font-family: 'icon-annenberg';
+  src:url('../fonts/icon-annenberg.eot');
+  src:url('../fonts/icon-annenberg.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/icon-annenberg.woff') format('woff'),
+    url('../fonts/icon-annenberg.ttf') format('truetype'),
+    url('../fonts/icon-annenberg.svg?#icon-annenberg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,49 @@
+//
+// Sitewide mixins
+//
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+@mixin hide-text {
+  text-indent: -9999px;
+  overflow: hidden;
+}
+@mixin nowrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Center
+// Centers an element with reference to the parent element that is not position: static
+//
+// Note that for this to work properly, you will need to absolutely position this element before applying this mixin
+// 
+// Params
+//   $way: x (for horizontal centering), y (vertical centering), or xy (centered in both ways)
+//
+@mixin center($way:'xy') {
+  @if $way == 'x' {
+    left: 50%;
+    transform: translateX(-50%);
+  } @else if $way == 'y' {
+    top: 50%;
+    transform: translateY(-50%);
+  } @else if $way == 'none' {
+    top: auto;
+    left: auto;
+    transform: translate(0, 0);
+  } @else {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
