@@ -27,58 +27,13 @@ select {
   -webkit-appearance: none;
   max-width: 100%;
 }
-.form-type-select {  
-  max-width: 100%;
-  position: relative;
-  border: 1px solid $border-gray;
-  display: inline-block;
-  padding: 0;
-  height: 50px;
-  overflow: hidden;
-  &:before {  
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    position: absolute;
-    right: 20px;
-    top: 18px;
-    border-top: solid 12px $red;
-    border-left: solid 10px transparent;
-    border-right: solid 10px transparent;
-    pointer-events: none;
-  }
-  select {
-    width: 105%; // Make sure the dropdown is hidden in IE9
-    max-width: 105%;
-    min-width: 140px;
-    margin: 0;
-    background: transparent;
-    color: #888;
-    border: none;
-    outline: none;
-    display:  inline-block;
-    appearance: none;
-    cursor: pointer;
-    height: 50px;
-    line-height: 50px;
-    text-indent: 20px;
-    border-radius: 0;
-  }
-}
 %button,
 input[type="submit"] {
   border: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  background: $red;
-  color: white;
   padding: 10px 20px;
   transition: background .2s;
-  &:hover,
-  &:focus {
-    background: lighten($red, 5%);
-  }
 }
 .form-item {
   margin-bottom: 20px;

@@ -1,9 +1,10 @@
-/* =============================================================================
-    Print Styles
-   ========================================================================== */
+/**
+ * Print Layout
+ */
 #sidebar-first,
 #navigation,
 #block-system-main-menu,
 #footer {
-  display: none;
-}
+  display: none; }
+
+/*# sourceMappingURL=print.css.map */

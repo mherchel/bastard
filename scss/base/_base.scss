@@ -10,14 +10,10 @@
   }
 }
 *::selection {
-  background: $red;
-  color: white;
-  text-shadow: none;
+
 }
 body {
-  font-family: National;
   font-weight: 200;
-  color: $gray;
   line-height: 1.4;
   font-size: 21px;
   -webkit-font-smoothing: antialiased;
@@ -42,7 +38,6 @@ main {
   }
 }
 a {
-  color: $red;
   transition: .2s color;
   text-decoration: none;
 }
