@@ -1,0 +1,18 @@
+/**
+ * Base layouts
+ */
+
+#page { // Prevent any unintended horizontal scrolling
+  width: 100%;
+  overflow: hidden;
+  min-height: 800px;
+}
+%container,
+.container,
+div.tabs {
+  @include breakpoint($tablet_narrow) {
+    width: 94%;
+    max-width: 1700px;
+    margin: 0 auto;
+  }
+}

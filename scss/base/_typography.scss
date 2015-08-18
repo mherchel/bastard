@@ -1,0 +1,53 @@
+/**
+ * Typography
+ */
+
+h1 {
+  font-size: 45px;
+  line-height: 1.1;
+  &.large {
+    font-size: 65px;
+  }
+  a {
+    color: inherit;
+    transition: color .2s;
+  }
+}
+h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  a {
+    color: inherit;
+    transition: color .2s;
+  }
+}
+h3 {
+  font-size: 27px;
+  line-height: 1.2;
+  text-transform: none;
+  margin: 0 0 10px 0;
+  a {
+    color: inherit;
+    transition: color .2s;
+  }
+}
+h3 {
+  font-size: 22px;
+  line-height: 1.2;
+  a {
+    color: inherit;
+    transition: color .2s;
+  }
+}
+blockquote {
+  position: relative;
+  font-size: 30px;
+  &:before {
+    position: absolute;
+    right: calc(100% + 10px);
+    top: 0;
+    content: "“";
+    font-size: 70px;
+    line-height: 1.1;
+  }
+}

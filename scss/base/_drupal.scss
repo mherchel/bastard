@@ -1,0 +1,24 @@
+/**
+ * Base Drupal styles
+ */
+
+/**
+ * Hide elements visually, but keep them available for screen-readers.
+ *
+ * Used for information required for screen-reader users to understand and use
+ * the site where visual display is undesirable. Information provided in this
+ * manner should be kept concise, to avoid unnecessary burden on the user.
+ */
+.element-invisible {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  &.element-focusable,
+  &.element-focusable:active
+  &.element-focusable:focus {
+    position: static;
+    clip: auto;
+  }
+}
+.file-icon { // Hide Drupal's default file icons
+  display: none;
+}

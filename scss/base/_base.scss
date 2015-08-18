@@ -1,0 +1,48 @@
+/**
+ * Base Drupal styles
+ */
+
+* {
+  box-sizing: border-box;
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+*::selection {
+
+}
+body {
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  html &.admin-menu {
+    margin-top: 130px !important;
+    @include breakpoint(400px) {
+      margin-top: 90px !important;
+    }
+    @include breakpoint(600px) {
+      margin-top: 60px !important;
+    }
+    @include breakpoint(1020px) {
+      margin-top: 29px !important;
+    }
+  }
+}
+main {
+  ol, ul {
+    overflow: hidden;
+  }
+}
+a {
+  transition: .2s color;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.clearfix {
+  @extend %clearfix;
+}
