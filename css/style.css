@@ -367,9 +367,7 @@ th {
     box-sizing: border-box; }
 
 body {
-  font-weight: 200;
   line-height: 1.4;
-  font-size: 21px;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   font-smoothing: antialiased; }
@@ -474,8 +472,7 @@ input[type="submit"] {
  */
 h1 {
   font-size: 45px;
-  line-height: 1.1;
-  font-weight: 200; }
+  line-height: 1.1; }
   h1.large {
     font-size: 65px; }
   h1 a {
@@ -484,8 +481,7 @@ h1 {
 
 h2 {
   font-size: 40px;
-  line-height: 1.2;
-  font-weight: 200; }
+  line-height: 1.2; }
   h2 a {
     color: inherit;
     transition: color 0.2s; }
@@ -493,7 +489,6 @@ h2 {
 h3 {
   font-size: 27px;
   line-height: 1.2;
-  font-weight: 500;
   text-transform: none;
   margin: 0 0 10px 0; }
   h3 a {
@@ -502,16 +497,14 @@ h3 {
 
 h3 {
   font-size: 22px;
-  line-height: 1.2;
-  font-weight: 500; }
+  line-height: 1.2; }
   h3 a {
     color: inherit;
     transition: color 0.2s; }
 
 blockquote {
   position: relative;
-  font-size: 30px;
-  font-weight: normal; }
+  font-size: 30px; }
   blockquote:before {
     position: absolute;
     right: calc(100% + 10px);
