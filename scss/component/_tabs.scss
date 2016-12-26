@@ -5,6 +5,7 @@
 ul.tabs {
   @include clearfix;
 }
+
 @include breakpoint(max-width $tablet_narrow) {
   ul.tabs {
     background-color: #eee;
@@ -12,6 +13,7 @@ ul.tabs {
     box-sizing: content-box;
     padding-bottom: 1px;
     display: table-row;
+
     > li {
       width: 100%;
       display: table-cell;
@@ -25,24 +27,30 @@ ul.tabs {
       position: relative;
       padding: 20px 5px;
       font-size: 16px;
+
       &:first-child:nth-last-child(2),
       &:first-child:nth-last-child(2) ~ li, {
         width: 50%;
       }
+
       &:first-child:nth-last-child(3),
       &:first-child:nth-last-child(3) ~ li {
         width: 33.33%;
       }
+
       &:first-child:nth-last-child(4),
       &:first-child:nth-last-child(4) ~ li {
         width: 25%;
       }
+
       &:first-child:nth-last-child(5),
       &:first-child:nth-last-child(5) ~ li {
         width: 20%;
       }
+
       &.active {
         background-color: #ccc;
+
           &:after {
           content: "";
           width: 0;
@@ -56,14 +64,17 @@ ul.tabs {
           border-bottom: 10px solid #fff;
           }
       }
+
       &:last-child {
         border: none;
       }
+
       a {
         font-weight: normal;
         text-decoration: none;
         background-color: transparent;
         display: block;
+
         &:hover {
           background-color: transparent;
           color: black;
@@ -73,25 +84,30 @@ ul.tabs {
   }
 }
 
+
 @include breakpoint($tablet_narrow) {
   ul.tabs {
     margin: 10px 0 2px 0;
     border-bottom: 1px solid #bbb;
     padding: 0;
+
     > li {
       list-style: none;
       float: left;
       margin-right: 1em;
       background-color: #eee;
       font-size: 16px;
+
       &.active {
         background-color: #ccc;
       }
+
       a {
         text-decoration: none;
         display: block;
         padding: 5px 10px;
         width: 100%;
+
         &:hover {
           color: black;
         }
@@ -99,3 +115,4 @@ ul.tabs {
     }
   }
 }
+

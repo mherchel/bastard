@@ -12,6 +12,7 @@
 .element-invisible {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
+
   &.element-focusable,
   &.element-focusable:active
   &.element-focusable:focus {
@@ -19,6 +20,8 @@
     clip: auto;
   }
 }
+
 .file-icon { // Hide Drupal's default file icons
   display: none;
 }
+

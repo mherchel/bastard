@@ -8,25 +8,29 @@
     content: "";
     display: table;
   }
+
   &:after {
     clear: both;
   }
 }
+
 @mixin hide-text {
   text-indent: -9999px;
   overflow: hidden;
 }
+
 @mixin nowrap {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
+
 // Center
 // Centers an element with reference to the parent element that is not position: static
 //
 // Note that for this to work properly, you will need to absolutely position this element before applying this mixin
-// 
+//
 // Params
 //   $way: x (for horizontal centering), y (vertical centering), or xy (centered in both ways)
 //
@@ -47,3 +51,4 @@
     transform: translate(-50%, -50%);
   }
 }
+

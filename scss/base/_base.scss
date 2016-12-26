@@ -9,14 +9,17 @@
     box-sizing: border-box;
   }
 }
+
 *::selection {
 
 }
+
 body {
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   font-smoothing: antialiased;
+
   html &.admin-menu {
     margin-top: 130px !important;
     @include breakpoint(400px) {
@@ -30,19 +33,24 @@ body {
     }
   }
 }
+
 main {
   ol, ul {
     overflow: hidden;
   }
 }
+
 a {
   transition: .2s color;
   text-decoration: none;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 .clearfix {
   @include clearfix;
 }
+

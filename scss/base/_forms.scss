@@ -5,6 +5,7 @@
 label {
   display: block;
 }
+
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -22,11 +23,13 @@ textarea {
     background: #eee;
   }
 }
+
 select {
   -moz-appearance: none;
   -webkit-appearance: none;
   max-width: 100%;
 }
+
 %button,
 input[type="submit"] {
   border: none;
@@ -35,9 +38,12 @@ input[type="submit"] {
   padding: 10px 20px;
   transition: background .2s;
 }
+
 .form-item {
   margin-bottom: 20px;
 }
+
 .description {
   font-size: 16px;
 }
+
