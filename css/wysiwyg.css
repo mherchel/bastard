@@ -244,7 +244,8 @@ select {
 *    `input` and others.
 */
 button,
-html input[type='button'], input[type='reset'],
+html input[type='button'],
+input[type='reset'],
 input[type='submit'] {
   -webkit-appearance: button;
   /* 2 */
@@ -372,14 +373,14 @@ h1 {
     font-size: 65px; }
   h1 a {
     color: inherit;
-    transition: color 0.2s; }
+    transition: color .2s; }
 
 h2 {
   font-size: 40px;
   line-height: 1.2; }
   h2 a {
     color: inherit;
-    transition: color 0.2s; }
+    transition: color .2s; }
 
 h3 {
   font-size: 27px;
@@ -388,14 +389,14 @@ h3 {
   margin: 0 0 10px 0; }
   h3 a {
     color: inherit;
-    transition: color 0.2s; }
+    transition: color .2s; }
 
 h3 {
   font-size: 22px;
   line-height: 1.2; }
   h3 a {
     color: inherit;
-    transition: color 0.2s; }
+    transition: color .2s; }
 
 blockquote {
   position: relative;

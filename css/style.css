@@ -240,7 +240,8 @@ select {
 *    `input` and others.
 */
 button,
-html input[type='button'], input[type='reset'],
+html input[type='button'],
+input[type='reset'],
 input[type='submit'] {
   -webkit-appearance: button;
   /* 2 */
@@ -362,8 +363,7 @@ th {
  */
 * {
   box-sizing: border-box; }
-  *:before,
-  *:after {
+  *:before, *:after {
     box-sizing: border-box; }
 
 body {
@@ -394,6 +394,13 @@ img {
   max-width: 100%;
   height: auto; }
 
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
 /**
  * Base Drupal styles
  */
@@ -408,8 +415,7 @@ img {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px); }
   .element-invisible.element-focusable,
-  .element-invisible.element-focusable:active
-.element-invisible.element-focusable:focus {
+  .element-invisible.element-focusable:active .element-invisible.element-focusable:focus {
     position: static;
     clip: auto; }
 
@@ -438,7 +444,7 @@ textarea {
   max-width: 100%;
   background: white;
   outline: none;
-  transition: background 0.2s;
+  transition: background .2s;
   border-radius: 20px; }
   input[type="text"]:focus,
   input[type="password"]:focus,
@@ -451,12 +457,13 @@ select {
   -webkit-appearance: none;
   max-width: 100%; }
 
+
 input[type="submit"] {
   border: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   padding: 10px 20px;
-  transition: background 0.2s; }
+  transition: background .2s; }
 
 .form-item {
   margin-bottom: 20px; }
@@ -477,14 +484,14 @@ h1 {
     font-size: 65px; }
   h1 a {
     color: inherit;
-    transition: color 0.2s; }
+    transition: color .2s; }
 
 h2 {
   font-size: 40px;
   line-height: 1.2; }
   h2 a {
     color: inherit;
-    transition: color 0.2s; }
+    transition: color .2s; }
 
 h3 {
   font-size: 27px;
@@ -493,14 +500,14 @@ h3 {
   margin: 0 0 10px 0; }
   h3 a {
     color: inherit;
-    transition: color 0.2s; }
+    transition: color .2s; }
 
 h3 {
   font-size: 22px;
   line-height: 1.2; }
   h3 a {
     color: inherit;
-    transition: color 0.2s; }
+    transition: color .2s; }
 
 blockquote {
   position: relative;
@@ -526,6 +533,7 @@ blockquote {
   min-height: 800px; }
 
 @media (min-width: 650px) {
+  
   .container,
   div.tabs {
     width: 94%;
@@ -536,8 +544,7 @@ blockquote {
 /**
  * Tabs
  */
-ul.tabs:before,
-ul.tabs:after {
+ul.tabs:before, ul.tabs:after {
   content: "";
   display: table; }
 

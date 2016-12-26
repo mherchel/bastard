@@ -4,7 +4,6 @@
 	"sources": [
 		"../scss/print.scss"
 	],
-	"sourcesContent": [],
-	"mappings": "AAAA;;GAEG;AAKH,cAAc;AACd,WAAW;AACX,uBAAuB;AACvB,OAAO,CAHC;EACN,OAAO,EAAE,IAAK,GADP",
-	"names": []
+	"names": [],
+	"mappings": "AAAA;;GAEG;AAEH,AAAA,cAAc;AACd,AADc,WACH;AACX,AADW,uBACY;AACvB,AADuB,OAChB,CAAC;EACN,OAAO,EAAE,IAAI,GACd"
 }
