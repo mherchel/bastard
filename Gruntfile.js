@@ -39,7 +39,7 @@ module.exports = function(grunt) {
     },
     autoprefixer: {
       options: {
-        browsers: ['last 3 versions', 'ie 9']
+        browsers: ['last 3 versions', 'ie 11']
         // For testing purposes, use this config
         // browsers: ['opera 12', 'ff 15', 'chrome 25']
       },
